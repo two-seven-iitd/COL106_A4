@@ -8,9 +8,9 @@ Evaluator::Evaluator() {
 
 Evaluator::~Evaluator() {
     // Delete all expression trees
-    for (ExprTreeNode* root : expr_trees) {
-        delete root;  
-    }
+    // for (ExprTreeNode* root : expr_trees) {
+    //     delete root;  
+    // }
     
     delete symtable;  
 }
