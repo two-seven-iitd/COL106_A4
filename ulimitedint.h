@@ -27,6 +27,7 @@ public:
 
     // Get sign
     int get_sign();
+    void set_sign(int s);
 
     // Get capacity 
     int get_capacity();
