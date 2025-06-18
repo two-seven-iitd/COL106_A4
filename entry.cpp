@@ -2,7 +2,7 @@
 /* unless EXPLICTLY clarified on Piazza. */
 #include "entry.h"
 
-SymEntry::Symentry() {
+SymEntry::SymEntry() {
     key = "";
     val = nullptr;
     left = nullptr;
@@ -16,6 +16,21 @@ SymEntry::SymEntry(string k, UnlimitedRational* v) {
 
 }
 SymEntry::~SymEntry() {
-    left = nullptr;
-    right = nullptr;
+    delete val;
+    delete left;
+    delete right;
+    // if (val != nullptr) {
+    //     delete val;
+    //     val = nullptr;
+    // }
+
+    // if (left != nullptr) {
+    //     delete left;
+    //     left = nullptr;
+    // }
+
+    // if (right != nullptr) {
+    //     delete right;
+    //     right = nullptr;
+    // }
 }

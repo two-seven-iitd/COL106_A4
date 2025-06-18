@@ -282,6 +282,7 @@ UnlimitedInt* UnlimitedInt::mul(UnlimitedInt* i1, UnlimitedInt* i2) {
     }
     return new UnlimitedInt(result,result_size,result_sign, final_size);
 }
+
 UnlimitedInt* UnlimitedInt::div(UnlimitedInt* i1, UnlimitedInt* i2) {
     if (i2->get_sign() == 0) {
         throw std::invalid_argument("Division by zero");

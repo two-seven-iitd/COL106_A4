@@ -2,7 +2,7 @@
 #include "exprtreenode.h"
 #include "symtable.h"
 #include <vector>
-
+using namespace std;
 class Evaluator {
 public:
     vector<ExprTreeNode*> expr_trees;
